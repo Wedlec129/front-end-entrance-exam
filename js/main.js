@@ -7,7 +7,10 @@ import {createToolsSection} from "./components/tools";
 import {createEduSection} from "./components/education";
 import {createInterestsSection} from "./components/interests";
 import {createContactSection} from "./components/contact";
- 
+import {createTopBar} from "./components/bar";
+
+import {setEditableListener} from "./utils";
+import {initSavePDFButton} from "./utils/save-pdf.js";
 
 document.querySelector('#app').innerHTML =[
   createProfileSection(),
@@ -17,5 +20,9 @@ document.querySelector('#app').innerHTML =[
   createToolsSection(),
   createEduSection(),
   createInterestsSection(),
-  createContactSection()
+  createContactSection(),
+  createTopBar()
 ].join('\n')
+
+setEditableListener();
+initSavePDFButton('#save-pdf')
