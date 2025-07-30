@@ -4,6 +4,7 @@ import {createNameSection} from "./components/name";
 import {createLangsSection} from "./components/languages";
 import {createExperienceSection} from "./components/experience";
 import {createToolsSection} from "./components/tools";
+import {createEduSection} from "./components/education";
  
 
 document.querySelector('#app').innerHTML =[
@@ -11,5 +12,6 @@ document.querySelector('#app').innerHTML =[
   createNameSection(),
   createLangsSection(),
   createExperienceSection(),
-  createToolsSection()
+  createToolsSection(),
+  createEduSection()
 ].join('\n')
