@@ -1,0 +1,62 @@
+.exps__block {
+    grid-area: 2 / 1 / 3 / 4;
+
+    @media screen and (max-width: 600px) {
+        grid-area: 3 / 1 / 4 / 5;
+    }
+}
+
+.exps__item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 10px;
+    padding: 8px;
+    background-color: var(--exps-item-bg, #fff);
+    color: var(--exps-item-color, #000);
+}
+
+.exps__item:first-of-type {
+    --exps-item-bg: #28D979;
+    --exps-item-color: white;
+    --exps-item-description-color: white;
+}
+
+.exps__item__topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.most_recent{
+    display: none;
+}
+
+.most_recent:first-of-type{
+    display: flex;
+    align-items: center;
+    min-width: 61px;
+    min-height: 16px;
+    padding: 2px 6px;
+    background-color: #7E731266;
+    color: #DDF163;
+    font-size: 8px;
+    border-radius: 59px;
+}
+
+
+
+.exps__item__content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 8px;
+}
+
+.exps__item__content__activities {
+    padding-left: 10px;
+    list-style: disc;
+}
+
+.content__description {
+    color: var(--exps-item-description-color, #3F3D3D);
+}
